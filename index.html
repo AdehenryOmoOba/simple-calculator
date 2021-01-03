@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adehenry: Modern Web Form with JS Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <form name="calc" class="calculator">
+
+        <input type="text" class="value" name="txt" readonly="">
+        <span class="num clear" onclick="document.calc.txt.value = ''">c</span>
+        <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+        <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+        <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+        <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+        <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+        <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+        <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+        <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+        <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+        <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+        <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+        <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+        <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+        <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+        <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+        <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+      
+       </form>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
